@@ -3,34 +3,47 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
-Console.Clear();
-Console.Write("Введите число, соответствующее дню недели: ");
-int number = Convert.ToInt32(Console.ReadLine());
 
-switch(number)
+//************function************// 
+int Output(string message)
 {
-    case 1:
-        Console.WriteLine("Это не выходной день");
-        break;
-    case 2:
-        Console.WriteLine("Это не выходной день");
-        break;
-    case 3:
-        Console.WriteLine("Это не выходной день");
-        break;
-    case 4:
-        Console.WriteLine("Это не выходной день");
-        break;
-    case 5: 
-        Console.WriteLine("Это не выходной день");
-        break;
-    case 6: 
-        Console.WriteLine("Это выходной день");
-        break;
-    case 7: 
-        Console.WriteLine("Это выходной день");
-        break;
-    default:
-        Console.WriteLine("Вы ввели число, не соответствующее дню недели");
-        break;
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
 }
+void OutPutDayOff(int number)
+{
+    switch(number)
+    {
+        case 1:
+            Console.WriteLine("Это не выходной день");
+            break;
+        case 2:
+            Console.WriteLine("Это не выходной день");
+            break;
+        case 3:
+            Console.WriteLine("Это не выходной день");
+            break;
+        case 4:
+            Console.WriteLine("Это не выходной день");
+            break;
+        case 5: 
+            Console.WriteLine("Это не выходной день");
+            break;
+        case 6: 
+            Console.WriteLine("Это выходной день");
+            break;
+        case 7: 
+            Console.WriteLine("Это выходной день");
+            break;
+        default:
+            Console.WriteLine("Вы ввели число, не соответствующее дню недели");
+            break;
+    }
+}
+
+//************Code************// 
+Console.Clear();
+int number = Output("Введите число, соответствующее дню недели: ");
+OutPutDayOff(number);
+
+
