@@ -1,11 +1,10 @@
 ﻿/* Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-
 456 -> 5
 782 -> 8
 918 -> 1
 */
 
-//Code//
+//************function************//
 int WriteNumber(string message)
 {
     Console.Write(message);
@@ -18,5 +17,5 @@ int NumberMiddle(int number)
     return (number-result) /10;
 
 }
-
+//************Code************//
 Console.WriteLine(NumberMiddle(WriteNumber("Введите трехзначеное число: ")));
