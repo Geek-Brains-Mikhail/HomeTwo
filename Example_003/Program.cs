@@ -3,9 +3,7 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
-
 Console.Clear();
-
 Console.Write("Введите число, соответствующее дню недели: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
